@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Project</title>
+    <style>
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif, "Times New Roman", Times, serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #0afdf5;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header styles */
+#main-header {
+  background: #ce0909;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+
+  top: 0;
+  z-index: 1000;
+
+  /* Adjusted header height */
+}
+
+#main-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Main navigation styles */
+#main-nav {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+
+  width: 100%;
+}
+
+#main-nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#main-nav ul li {
+  margin-right: 20px;
+}
+
+#main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+}
+
+#main-nav ul li a:hover {
+  color: #ccc;
+}
+
+/* Main content styles */
+main {
+  padding-top: 140px; /* Adjusted top padding to accommodate fixed header */
+}
+
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Adding transition for hover effect */
+}
+
+.section:hover {
+  transform: translateY(-5px); /* Applying hover effect */
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.content p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Form styles */
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea,
+.form select,
+.form input[type="password"],
+.form input[type="url"],
+.form input[type="range"] {
+  width: calc(100% - 16px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form input[type="submit"] {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.form input[type="submit"]:hover {
+  background: #555;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table caption {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  color: #333;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table tfoot {
+  font-weight: bold;
+}
+
+/* Multimedia styles */
+.video-container,
+.audio-container {
+  margin-bottom: 30px;
+}
+
+/* Footer styles */
+#main-footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+    </style>
+    <!-- Link to external CSS file -->
+  </head>
+  <body>
+    <!-- Header section -->
+    <header id="main-header">
+      <div class="container">
+        <h1>Welcome to my HTML CSS Project</h1>
+      </div>
+      <!-- Navigation menu -->
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+          <li><a href="#section4">Section 4</a></li>
+          <li><a href="#section5">Section 5</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="container">
+      <!-- Section 1 -->
+      <section id="section1" class="section">
+        <div class="card">
+          <h2>Section 1: Basic Elements</h2>
+          <p>This section demonstrates basic HTML elements.</p>
+          <!-- Content within section 1 -->
+          <div class="content">
+            <h3>Text Elements</h3>
+            <p>This is a paragraph.</p>
+            <p><strong>This is bold text.</strong></p>
+            <p><em>This is italic text.</em></p>
+          </div>
+          <!-- Content continued with different elements -->
+          <div class="content">
+            <h3>List Elements</h3>
+            <ul>
+              <li>Unordered List Item 1</li>
+              <li>Unordered List Item 2</li>
+              <li>Unordered List Item 3</li>
+            </ul>
+            <ol>
+              <li>Ordered List Item 1</li>
+              <li>Ordered List Item 2</li>
+              <li>Ordered List Item 3</li>
+            </ol>
+          </div>
+          <!-- Additional content -->
+          <div class="content">
+            <h3>Links and Images</h3>
+            <a href="https://www.example.com">Visit Example.com</a>
+            <br />
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Placeholder Image"
+            />
+          </div>
+          <!-- Form element -->
+          <div class="content">
+            <h3>Dropdown List</h3>
+            <label for="dropdown">Choose a category:</label>
+            <select id="dropdown" name="category">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2" class="section">
+        <div class="card">
+          <h2>Section 2: Form Elements</h2>
+          <p>This section demonstrates form elements.</p>
+          <!-- Form element -->
+          <form id="myForm" class="form">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" /><br /><br />
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" /><br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" rows="4" cols="50"></textarea
+            ><br /><br />
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" /><br /><br />
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color" /><br /><br />
+
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file" /><br /><br />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" /><br /><br />
+
+            <label for="range">Range:</label>
+            <input
+              type="range"
+              id="range"
+              name="range"
+              min="0"
+              max="100"
+              value="50"
+            /><br /><br />
+
+            <label for="url">Website URL:</label>
+            <input
+              type="url"
+              id="url"
+              name="url"
+              value="https://"
+            /><br /><br />
+
+            <label for="checkbox">Checkbox:</label>
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="checkbox"
+              value="checkbox"
+            /><br /><br />
+
+            <label for="radio1">Radio 1:</label>
+            <input type="radio" id="radio1" name="radio" value="radio1" />
+
+            <label for="radio2">Radio 2:</label>
+            <input
+              type="radio"
+              id="radio2"
+              name="radio"
+              value="radio2"
+            /><br /><br />
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section3" class="section">
+        <div class="card">
+          <h2>Section 3: Tables</h2>
+          <p>This section demonstrates tables.</p>
+          <!-- Table element -->
+          <table>
+            <caption>
+              Sample Table
+            </caption>
+            <thead>
+              <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+              </tr>
+              <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">Footer Row</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section4" class="section">
+        <div class="card">
+          <h2>Section 4: Multimedia</h2>
+          <p>This section demonstrates multimedia elements.</p>
+          <!-- Multimedia content -->
+          <div class="content">
+            <h3>Video</h3>
+            <video width="320" height="240" controls>
+              <source
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="content">
+            <h3>Audio</h3>
+            <audio controls>
+              <source
+                src="https://www.w3schools.com/html/horse.mp3"
+                type="audio/mpeg"
+              />
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section5" class="section">
+        <div class="card">
+          <h2>Section 5: Additional Useful Tags</h2>
+          <p>
+            This section includes additional tags useful for building various
+            projects.
+          </p>
+          <!-- Additional tags -->
+          <div class="content">
+            <h3>Interactive and Semantic Tags</h3>
+            <details>
+              <summary>Details</summary>
+              <p>This is hidden content that can be toggled.</p>
+            </details>
+            <div>
+              <h4>Figure and Figcaption</h4>
+              <figure>
+                <img src="https://via.placeholder.com/150" alt="Figure Image" />
+                <figcaption>A caption for the image.</figcaption>
+              </figure>
+            </div>
+            <div>
+              <h4>Abbreviation and Address</h4>
+              <p><abbr title="World Wide Web">WWW</abbr></p>
+              <address>
+                John Doe<br />
+                123 Main Street<br />
+                Anytown, USA
+              </address>
+            </div>
+          </div>
+          <!-- Canvas and SVG -->
+          <div class="content">
+            <h3>Canvas and SVG</h3>
+            <canvas id="myCanvas" width="200" height="100"></canvas>
+            <svg width="100" height="100">
+              <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="black"
+                stroke-width="3"
+                fill="red"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer id="main-footer">
+      <div class="container">
+        <p>&copy; 2024 HTML CSS Project. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
