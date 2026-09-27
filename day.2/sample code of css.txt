@@ -1,0 +1,50 @@
+*{
+    /* universal selector is represented by '*' ,
+    it is used to implement css for entire page.
+
+    */
+    
+    background-color: #f7bf76;
+}
+div{
+    /* element selector respresented by element name
+    it is used for all div elements */
+    background-color: #29e24e;
+    font-size: 20px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#first{
+    /* id selector is represented by '#' ,
+    it is used to implement css for a specific element with id attribute */
+    background-color: #7876f7;
+    width: 500px;
+    height: 500px;
+    
+    font-size: 20px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.second{
+    /* class selector is represented by '.' ,
+    it is used to implement css for a specific element with class attribute */
+    background-color: #f77676;
+    font-size: 20px;
+    width: 500px;
+    height: 500px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} 
+div p{
+    /* descendant selector is represented by ' ' ,
+    it is used to implement css for a specific element which is a descendant of another element */
+    background-color: #f7f776;
+    font-size: 20px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"]{
+    /* attribute selector is represented by '[]' ,
+    it is used to implement css for a specific element with a specific attribute */
+    background-color: #76f7f7;
+    font-size: 20px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
